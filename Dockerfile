@@ -4,8 +4,8 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir fastapi uvicorn pydantic
 
-COPY merge-sort.py .
+COPY main.py .
 
 EXPOSE 8080
 
-CMD ["python", "merge-sort.py"]
+CMD ["python", "main.py"]
